@@ -17,17 +17,19 @@ public class ShopCanvas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     public void PreviousAction()
     {
-        if (categoryName == null) {
-            SceneManager.LoadScene("SampleScene");
-        } else {
-            ActiveMenu.SetActive(false);
-            categoriesMenu.SetActive(true);
-        }
+        //if (categoryName == null) {
+            Debug.Log("Test");
+            
+            SceneManager.LoadScene(0);
+            SceneManager.UnloadScene("Shop");
+            //} else {
+            //    ActiveMenu.SetActive(false);
+            //    categoriesMenu.SetActive(true);
+            //}
     }
     
     public void switchToMenu(GameObject menu)
